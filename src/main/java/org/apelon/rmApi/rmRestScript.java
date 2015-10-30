@@ -41,8 +41,12 @@ public class rmRestScript {
 		return this.sb.toString();
 	}
 	
-	public String updateFacilities() {
-		
+	/**
+	 * The JSON Command to update facilities layer for Resource MAP, from FHIR data
+	 * TODO: Add Getters and Setters for Layer ID's
+	 * @return Resource Map Update Layer JSON Command (String)
+	 */
+	public String updateFacilitiesJsonCommand() {
 		this.addCommand("{");
 			this.addCommand("\"layer\":{");
 				this.addCommand("\"id\":\"1670\",");
@@ -58,15 +62,15 @@ public class rmRestScript {
 						this.addCommand("\"layer_id\":\"1670 Type\",");
 						this.addCommand("\"config\":{");
 							this.addCommand("\"options\":{");
-								//Loop through SCT Codes Here
-								//TODO: Stream-in SCT Codes
-								for(int x = 1; x < 3; x++) {
-									this.addCommand("\"" + x + "\":{ ");
-										this.addCommand("\"id\":\"" + (x + 1) + "\",");
-										this.addCommand("\"code\":\"123456789\",");
-										this.addCommand("\"kind\":\"This is the code label\"");
+								int count = 0;
+								List<ValueSetContains> facilitiesData = this.getFhirFacilities();
+								for(ValueSetContains row : facilitiesData) {
+									this.addCommand("\"" + count + "\":{ ");
+										this.addCommand("\"id\":\"" + (count + 1) + "\",");
+										this.addCommand("\"code\":\"" + row.getCode().getValue() + "\",");
+										this.addCommand("\"kind\":\"" + row.getDisplay().getValue() + "\"");
 									this.addCommand("}");
-									if(x != 2) {
+									if(count != facilitiesData.size()) {
 										this.addCommand(","); 
 									}
 								}
@@ -80,7 +84,12 @@ public class rmRestScript {
 		return sb.toString();
 	}
 	
-	public List<ValueSetContains> getSctFacilities() {
+	/**
+	 * Gets FHIR Facilities
+	 * TODO: Break out the facilities value-set to make this more generic for more JSON commands
+	 * @return List of Facilities (from FHIR)
+	 */
+	public List<ValueSetContains> getFhirFacilities() {
 		try {
 			
 			// get parameters
@@ -103,16 +112,17 @@ public class rmRestScript {
 			List<ValueSetContains> contains = valueSet.getExpansion().getContains();
 			logger.debug("Got " + contains.size() + " concepts.");
 			
-			for(ValueSetContains row : contains) {
-				logger.debug(row.getCode().getValue() + ": " + row.getDisplay().getValue());
-			}
 			return contains;
      } catch (Exception exp) {
             throw new RuntimeException(exp);
      }
 	}
 	
-	public void executeRmApiCommand(String command) {
+	/**
+	 * Takes a JSON Command and authenticates against Resource Map Server and sends Command
+	 * @param command Resource JSON Command (String)
+	 */
+	public void executeCommand(String command) {
 		HttpURLConnection conn = null;
 		try {
 			String base = "http://resourcemap.instedd.org";
@@ -166,9 +176,13 @@ public class rmRestScript {
 		}
 	}
 
+	/**
+	 * Test Class
+	 * @param args CLI Arguments
+	 */
 	public static void main(String args[]) {
 				
 		rmRestScript main = new rmRestScript();
-		main.executeRmApiCommand(main.getJsonCommand());
+		main.executeCommand(main.getJsonCommand());
 	}
 }
