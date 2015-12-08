@@ -30,11 +30,11 @@ public class rmRestScript {
 	private StringBuffer sb;
 	
 	public void newJsonCommand() {
-		sb = new StringBuffer();
+		this.sb = new StringBuffer();
 	}
 	
 	public void addCommand(String c) {
-		sb.append(c + System.lineSeparator());
+		this.sb.append(c + System.lineSeparator());
 	}
 	
 	public String getJsonCommand() {
@@ -51,28 +51,30 @@ public class rmRestScript {
 			this.addCommand("\"layer\":{");
 				this.addCommand("\"id\":\"1670\",");
 				this.addCommand("\"name\":\"Medical Facility Information\",");
-				this.addCommand("\"ord\":\"1\",");
+				this.addCommand("\"ord\":\"2\",");
 				this.addCommand("\"fields_attributes\":{");
 					this.addCommand("\"0\":{ ");
 						this.addCommand("\"id\":\"13377\",");
 						this.addCommand("\"name\":\"Facility Type\",");
 						this.addCommand("\"code\":\"facility_type\",");
 						this.addCommand("\"kind\":\"select_one\",");
-						this.addCommand("\"ord\":\"3\",");
-						this.addCommand("\"layer_id\":\"1670 Type\",");
+						this.addCommand("\"ord\":\"2\","); //OR 1
+						this.addCommand("\"layer_id\":\"1670\",");
 						this.addCommand("\"config\":{");
 							this.addCommand("\"options\":{");
+								int NEXT_ID = 81; //NEXT_ID 
 								int count = 0;
 								List<ValueSetContains> facilitiesData = this.getFhirFacilities();
 								for(ValueSetContains row : facilitiesData) {
 									this.addCommand("\"" + count + "\":{ ");
-										this.addCommand("\"id\":\"" + (count + 1) + "\",");
+										this.addCommand("\"id\":\"" + (NEXT_ID) + "\",");
 										this.addCommand("\"code\":\"" + row.getCode().getValue() + "\",");
-										this.addCommand("\"kind\":\"" + row.getDisplay().getValue() + "\"");
+										this.addCommand("\"label\":\"" + row.getDisplay().getValue() + "\"");
 									this.addCommand("}");
 									if(count != facilitiesData.size()) {
 										this.addCommand(","); 
 									}
+									count++; NEXT_ID++;
 								}
 							this.addCommand("}");
 						this.addCommand("}");
@@ -127,7 +129,8 @@ public class rmRestScript {
 		try {
 			String base = "http://resourcemap.instedd.org";
 			//String link = base + "/api/collections/1666/layers/1673.json";
-			String link = base + "/api/collections/1666/layers/1673.json";
+			//String link = base + "/api/collections/1666/layers/1670.json";
+			String link = "http://resourcemap.instedd.org/api/collections/:1666/:1673.json";
 			String uid = "vkaloidis@apelon.com";
 			String pwd = "apelon123";
 
@@ -183,6 +186,8 @@ public class rmRestScript {
 	public static void main(String args[]) {
 				
 		rmRestScript main = new rmRestScript();
+		main.newJsonCommand();
 		main.executeCommand(main.getJsonCommand());
+		System.out.print(main.getJsonCommand());
 	}
 }
