@@ -1,22 +1,17 @@
 package org.apelon.rmApi;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
 import org.apache.commons.codec.binary.Base64;
-import org.hl7.fhir.ValueSet;
-import org.hl7.fhir.ValueSetContains;
-import org.omg.CORBA_2_3.portable.OutputStream;
-
-import com.apelon.demo.dts.fhir.simpleclient.util.http.HttpMessageSender;
-import com.apelon.dts.fhir.translator.valueset.xml.FhirXmlTranslator;
-
 import org.apache.log4j.Logger;
 import org.hl7.fhir.ValueSet;
 import org.hl7.fhir.ValueSetContains;
@@ -29,16 +24,12 @@ public class rmRestScript {
 	private static final Logger logger = Logger.getLogger(rmRestScript.class);
 	private StringBuffer sb;
 	
-	public void newJsonCommand() {
-		this.sb = new StringBuffer();
-	}
-	
-	public void addCommand(String c) {
-		this.sb.append(c + System.lineSeparator());
+	public void addCommandParam(String c) {
+		sb.append(c + System.lineSeparator());
 	}
 	
 	public String getJsonCommand() {
-		return this.sb.toString();
+		return sb.toString();
 	}
 	
 	/**
@@ -46,42 +37,44 @@ public class rmRestScript {
 	 * TODO: Add Getters and Setters for Layer ID's
 	 * @return Resource Map Update Layer JSON Command (String)
 	 */
-	public String updateFacilitiesJsonCommand() {
-		this.addCommand("{");
-			this.addCommand("\"layer\":{");
-				this.addCommand("\"id\":\"1670\",");
-				this.addCommand("\"name\":\"Medical Facility Information\",");
-				this.addCommand("\"ord\":\"2\",");
-				this.addCommand("\"fields_attributes\":{");
-					this.addCommand("\"0\":{ ");
-						this.addCommand("\"id\":\"13377\",");
-						this.addCommand("\"name\":\"Facility Type\",");
-						this.addCommand("\"code\":\"facility_type\",");
-						this.addCommand("\"kind\":\"select_one\",");
-						this.addCommand("\"ord\":\"2\","); //OR 1
-						this.addCommand("\"layer_id\":\"1670\",");
-						this.addCommand("\"config\":{");
-							this.addCommand("\"options\":{");
+	public String updateLayer(int layerId, String valueSet) {
+		sb = new StringBuffer();
+		addCommandParam("{");
+			addCommandParam("\"layer\":{");
+				addCommandParam("\"id\":\"" + layerId + "\",");
+				addCommandParam("\"name\":\"Medical Facility Information\",");
+				addCommandParam("\"ord\":\"2\",");
+				addCommandParam("\"fields_attributes\":{");
+					addCommandParam("\"0\":{ ");
+						addCommandParam("\"id\":\"13377\",");
+						addCommandParam("\"name\":\"Facility Type\",");
+						addCommandParam("\"code\":\"facility_type\",");
+						addCommandParam("\"kind\":\"select_one\",");
+						addCommandParam("\"ord\":\"1\","); 
+						addCommandParam("\"layer_id\":\"" + layerId + "\",");
+						addCommandParam("\"config\":{");
+							addCommandParam("\"options\":{");
 								int NEXT_ID = 81; //NEXT_ID 
 								int count = 0;
-								List<ValueSetContains> facilitiesData = this.getFhirFacilities();
+								List<ValueSetContains> facilitiesData = this.getFhirFacilities(valueSet);
 								for(ValueSetContains row : facilitiesData) {
-									this.addCommand("\"" + count + "\":{ ");
-										this.addCommand("\"id\":\"" + (NEXT_ID) + "\",");
-										this.addCommand("\"code\":\"" + row.getCode().getValue() + "\",");
-										this.addCommand("\"label\":\"" + row.getDisplay().getValue() + "\"");
-									this.addCommand("}");
-									if(count != facilitiesData.size()) {
-										this.addCommand(","); 
+									addCommandParam("\"" + count + "\":{ ");
+										addCommandParam("\"id\":\"" + (NEXT_ID) + "\",");
+										addCommandParam("\"code\":\"" + row.getCode().getValue() + "\",");
+										addCommandParam("\"label\":\"" + row.getDisplay().getValue() + "\"");
+									addCommandParam("}");
+									//addCommandParam(count + " / " + facilitiesData.size());
+									if(count != (facilitiesData.size()-1)) {
+										addCommandParam(","); 
 									}
 									count++; NEXT_ID++;
 								}
-							this.addCommand("}");
-						this.addCommand("}");
-					this.addCommand("}");
-				this.addCommand("}");
-			this.addCommand("}");
-		this.addCommand("}");
+							addCommandParam("}");
+						addCommandParam("}");
+					addCommandParam("}");
+				addCommandParam("}");
+			addCommandParam("}");
+		addCommandParam("}");
 		System.out.println(sb.toString());
 		return sb.toString();
 	}
@@ -91,15 +84,15 @@ public class rmRestScript {
 	 * TODO: Break out the facilities value-set to make this more generic for more JSON commands
 	 * @return List of Facilities (from FHIR)
 	 */
-	public List<ValueSetContains> getFhirFacilities() {
+	private List<ValueSetContains> getFhirFacilities(String valueSetName) {
 		try {
 			
 			// get parameters
 			logger.debug("Getting value set from the demo server");
 			String uid = "dtsadminuser";
-			String pwd = "dtsadmin";
+			String pwd = "DTS-PASSWORD";
 			String url = "http://fhir.ext.apelon.com:8081/dtsserverws/fhir";
-			url += "/ValueSet/HeathCareWorkerTypes/$expand";
+			url += "/ValueSet/" + valueSetName + "/$expand";
 			// create the http client
 			HttpMessageSender client = new HttpMessageSender(uid, pwd);
 			// send the request
@@ -124,47 +117,46 @@ public class rmRestScript {
 	 * Takes a JSON Command and authenticates against Resource Map Server and sends Command
 	 * @param command Resource JSON Command (String)
 	 */
-	public void executeCommand(String command) {
+	private void updateLayer(int collectionId, int layerId, String valueSetName) {
+		String command = this.updateLayer(layerId, valueSetName);
+		
 		HttpURLConnection conn = null;
 		try {
 			String base = "http://resourcemap.instedd.org";
 			//String link = base + "/api/collections/1666/layers/1673.json";
 			//String link = base + "/api/collections/1666/layers/1670.json";
-			String link = "http://resourcemap.instedd.org/api/collections/:1666/:1673.json";
+			String link = "http://resourcemap.instedd.org/api/collections/" + collectionId + "/layers/" + layerId + ".json";
+			System.out.println("Link: " + link);
 			String uid = "vkaloidis@apelon.com";
-			String pwd = "apelon123";
+			String pwd = "RESOURCEMAP-PASSWORD";
 
-			// get the authentication string
 			String authenticationString = new String(Base64.encodeBase64((uid
 					+ ":" + pwd).getBytes()));
-			// get a connection
 			URL url = new URL(link);
 			conn = (HttpURLConnection) url.openConnection();
-			// set the parameters
+			conn.setDoOutput(true);
 			conn.setRequestMethod("PUT");
 			conn.setDoOutput(true);
-			conn.setRequestProperty("Authorization", "Basic "
-					+ authenticationString);
-			conn.setRequestProperty("Content-Type", "application/json");
+			conn.setRequestProperty("Authorization", "Basic " + authenticationString);
+			conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+			conn.setRequestProperty("Accept", "application/json");
 
-			java.io.OutputStream os = conn.getOutputStream();
-			os.write(command.getBytes());
-			os.flush();
+//			java.io.OutputStream os = conn.getOutputStream();
+			OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream());
+			osw.write(command.toString());
+			osw.flush();
 
-			// make the connection, send the request, and get the response
-			InputStream content = (InputStream) conn.getInputStream();
-			// read the response
-			BufferedReader in = new BufferedReader(new InputStreamReader(
-					content));
-			String rtn = "";
-			String line;
-			while ((line = in.readLine()) != null) {
-				rtn += line + "\n";
+			if(conn.getResponseCode() == HttpURLConnection.HTTP_OK){
+				BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream(), "UTF-8"));
+				String rtn = "";
+				String line;
+				while ((line = in.readLine()) != null) {
+					rtn += line + "\n";
+				}
+				System.out.print(rtn);
+			} else {
+				System.out.println("HTTP Response Not OK: " + conn.getResponseCode());
 			}
-
-			// return the response
-			System.out.print(rtn);
-
 		} catch (MalformedURLException e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
@@ -178,7 +170,7 @@ public class rmRestScript {
 			conn.disconnect();
 		}
 	}
-
+	
 	/**
 	 * Test Class
 	 * @param args CLI Arguments
@@ -186,8 +178,20 @@ public class rmRestScript {
 	public static void main(String args[]) {
 				
 		rmRestScript main = new rmRestScript();
-		main.newJsonCommand();
-		main.executeCommand(main.getJsonCommand());
-		System.out.print(main.getJsonCommand());
+		
+		main.updateLayer(1666, 1670, "HeathCareWorkerTypes");
+		
+//		
+//		BufferedWriter writer = null;
+//		try {
+//			writer = new BufferedWriter(new FileWriter("update-layer-command.json"));
+//			writer.write(main.updateFacilitiesJsonCommand());
+//			writer.flush();
+//			writer.close();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}			
+		
+		
 	}
 }

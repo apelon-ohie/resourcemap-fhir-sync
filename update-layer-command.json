@@ -1,0 +1,2792 @@
+{
+"layer":{
+"id":"1670",
+"name":"Medical Facility Information",
+"ord":"1",
+"fields_attributes":{
+"0":{ 
+"id":"13377",
+"name":"Facility Type",
+"code":"facility_type",
+"kind":"select_one",
+"ord":"2",
+"layer_id":"1670",
+"config":{
+"options":{
+"0":{ 
+"id":"81",
+"code":"223366009",
+"label":"Healthcare professional (occupation)"
+}
+,
+"1":{ 
+"id":"82",
+"code":"1421009",
+"label":"Specialized surgeon (occupation)"
+}
+,
+"2":{ 
+"id":"83",
+"code":"3430008",
+"label":"Radiation therapist (occupation)"
+}
+,
+"3":{ 
+"id":"84",
+"code":"3842006",
+"label":"Chiropractor (occupation)"
+}
+,
+"4":{ 
+"id":"85",
+"code":"4162009",
+"label":"Dental assistant (occupation)"
+}
+,
+"5":{ 
+"id":"86",
+"code":"5275007",
+"label":"Auxiliary nurse (occupation)"
+}
+,
+"6":{ 
+"id":"87",
+"code":"6816002",
+"label":"Specialized nurse (occupation)"
+}
+,
+"7":{ 
+"id":"88",
+"code":"6868009",
+"label":"Hospital administrator (occupation)"
+}
+,
+"8":{ 
+"id":"89",
+"code":"8724009",
+"label":"Plastic surgeon (occupation)"
+}
+,
+"9":{ 
+"id":"90",
+"code":"11661002",
+"label":"Neuropathologist (occupation)"
+}
+,
+"10":{ 
+"id":"91",
+"code":"11911009",
+"label":"Nephrologist (occupation)"
+}
+,
+"11":{ 
+"id":"92",
+"code":"11935004",
+"label":"Obstetrician (occupation)"
+}
+,
+"12":{ 
+"id":"93",
+"code":"13580004",
+"label":"School dental assistant (occupation)"
+}
+,
+"13":{ 
+"id":"94",
+"code":"14698002",
+"label":"Medical microbiologist (occupation)"
+}
+,
+"14":{ 
+"id":"95",
+"code":"17561000",
+"label":"Cardiologist (occupation)"
+}
+,
+"15":{ 
+"id":"96",
+"code":"18803008",
+"label":"Dermatologist (occupation)"
+}
+,
+"16":{ 
+"id":"97",
+"code":"18850004",
+"label":"Laboratory hematologist (occupation)"
+}
+,
+"17":{ 
+"id":"98",
+"code":"19244007",
+"label":"Gerodontist (occupation)"
+}
+,
+"18":{ 
+"id":"99",
+"code":"20145008",
+"label":"Removable prosthodontist (occupation)"
+}
+,
+"19":{ 
+"id":"100",
+"code":"21365001",
+"label":"Specialized dentist (occupation)"
+}
+,
+"20":{ 
+"id":"101",
+"code":"21450003",
+"label":"Neuropsychiatrist (occupation)"
+}
+,
+"21":{ 
+"id":"102",
+"code":"22515006",
+"label":"Medical assistant (occupation)"
+}
+,
+"22":{ 
+"id":"103",
+"code":"22731001",
+"label":"Orthopedic surgeon (occupation)"
+}
+,
+"23":{ 
+"id":"104",
+"code":"22983004",
+"label":"Thoracic surgeon (occupation)"
+}
+,
+"24":{ 
+"id":"105",
+"code":"23278007",
+"label":"Community health physician (occupation)"
+}
+,
+"25":{ 
+"id":"106",
+"code":"24430003",
+"label":"Physical medicine specialist (occupation)"
+}
+,
+"26":{ 
+"id":"107",
+"code":"24590004",
+"label":"Urologist (occupation)"
+}
+,
+"27":{ 
+"id":"108",
+"code":"25961008",
+"label":"Electroencephalography specialist (occupation)"
+}
+,
+"28":{ 
+"id":"109",
+"code":"26042002",
+"label":"Dental hygienist (occupation)"
+}
+,
+"29":{ 
+"id":"110",
+"code":"26369006",
+"label":"Public health nurse (occupation)"
+}
+,
+"30":{ 
+"id":"111",
+"code":"28229004",
+"label":"Optometrist (occupation)"
+}
+,
+"31":{ 
+"id":"112",
+"code":"28411006",
+"label":"Neonatologist (occupation)"
+}
+,
+"32":{ 
+"id":"113",
+"code":"28544002",
+"label":"Medical biochemist (occupation)"
+}
+,
+"33":{ 
+"id":"114",
+"code":"36682004",
+"label":"Physiotherapist (occupation)"
+}
+,
+"34":{ 
+"id":"115",
+"code":"37154003",
+"label":"Periodontist (occupation)"
+}
+,
+"35":{ 
+"id":"116",
+"code":"37504001",
+"label":"Orthodontist (occupation)"
+}
+,
+"36":{ 
+"id":"117",
+"code":"39677007",
+"label":"Internal medicine specialist (occupation)"
+}
+,
+"37":{ 
+"id":"118",
+"code":"40127002",
+"label":"Dietitian (general) (occupation)"
+}
+,
+"38":{ 
+"id":"119",
+"code":"40204001",
+"label":"Hematologist (occupation)"
+}
+,
+"39":{ 
+"id":"120",
+"code":"40570005",
+"label":"Interpreter (occupation)"
+}
+,
+"40":{ 
+"id":"121",
+"code":"41672002",
+"label":"Respiratory disease specialist (occupation)"
+}
+,
+"41":{ 
+"id":"122",
+"code":"41904004",
+"label":"Medical X-ray technician (occupation)"
+}
+,
+"42":{ 
+"id":"123",
+"code":"43702002",
+"label":"Occupational health nurse (occupation)"
+}
+,
+"43":{ 
+"id":"124",
+"code":"44652006",
+"label":"Pharmaceutical assistant (occupation)"
+}
+,
+"44":{ 
+"id":"125",
+"code":"45419001",
+"label":"Masseur (occupation)"
+}
+,
+"45":{ 
+"id":"126",
+"code":"45440000",
+"label":"Rheumatologist (occupation)"
+}
+,
+"46":{ 
+"id":"127",
+"code":"45544007",
+"label":"Neurosurgeon (occupation)"
+}
+,
+"47":{ 
+"id":"128",
+"code":"45956004",
+"label":"Sanitarian (occupation)"
+}
+,
+"48":{ 
+"id":"129",
+"code":"46255001",
+"label":"Pharmacist (occupation)"
+}
+,
+"49":{ 
+"id":"130",
+"code":"48740002",
+"label":"Philologist (occupation)"
+}
+,
+"50":{ 
+"id":"131",
+"code":"49203003",
+"label":"Dispensing optician (occupation)"
+}
+,
+"51":{ 
+"id":"132",
+"code":"49993003",
+"label":"Oral surgeon (occupation)"
+}
+,
+"52":{ 
+"id":"133",
+"code":"50149000",
+"label":"Endodontist (occupation)"
+}
+,
+"53":{ 
+"id":"134",
+"code":"54503009",
+"label":"Faith healer (occupation)"
+}
+,
+"54":{ 
+"id":"135",
+"code":"56397003",
+"label":"Neurologist (occupation)"
+}
+,
+"55":{ 
+"id":"136",
+"code":"56466003",
+"label":"Public health physician (occupation)"
+}
+,
+"56":{ 
+"id":"137",
+"code":"56542007",
+"label":"Medical record administrator (occupation)"
+}
+,
+"57":{ 
+"id":"138",
+"code":"56545009",
+"label":"Cardiovascular surgeon (occupation)"
+}
+,
+"58":{ 
+"id":"139",
+"code":"57654006",
+"label":"Fixed prosthodontist (occupation)"
+}
+,
+"59":{ 
+"id":"140",
+"code":"59058001",
+"label":"General physician (occupation)"
+}
+,
+"60":{ 
+"id":"141",
+"code":"59169001",
+"label":"Orthopedic technician (occupation)"
+}
+,
+"61":{ 
+"id":"142",
+"code":"59944000",
+"label":"Psychologist (occupation)"
+}
+,
+"62":{ 
+"id":"143",
+"code":"60008001",
+"label":"Public health nutritionist (occupation)"
+}
+,
+"63":{ 
+"id":"144",
+"code":"61207006",
+"label":"Medical pathologist (occupation)"
+}
+,
+"64":{ 
+"id":"145",
+"code":"61246008",
+"label":"Laboratory medicine specialist (occupation)"
+}
+,
+"65":{ 
+"id":"146",
+"code":"61345009",
+"label":"Otorhinolaryngologist (occupation)"
+}
+,
+"66":{ 
+"id":"147",
+"code":"61894003",
+"label":"Endocrinologist (occupation)"
+}
+,
+"67":{ 
+"id":"148",
+"code":"62247001",
+"label":"Family medicine specialist (occupation)"
+}
+,
+"68":{ 
+"id":"149",
+"code":"63098009",
+"label":"Clinical immunologist (occupation)"
+}
+,
+"69":{ 
+"id":"150",
+"code":"66476003",
+"label":"Oral pathologist (occupation)"
+}
+,
+"70":{ 
+"id":"151",
+"code":"66862007",
+"label":"Radiologist (occupation)"
+}
+,
+"71":{ 
+"id":"152",
+"code":"68867008",
+"label":"Public health dentist (occupation)"
+}
+,
+"72":{ 
+"id":"153",
+"code":"68950000",
+"label":"Prosthodontist (occupation)"
+}
+,
+"73":{ 
+"id":"154",
+"code":"69280009",
+"label":"Specialized physician (occupation)"
+}
+,
+"74":{ 
+"id":"155",
+"code":"71838004",
+"label":"Gastroenterologist (occupation)"
+}
+,
+"75":{ 
+"id":"156",
+"code":"73265009",
+"label":"Nursing aid (occupation)"
+}
+,
+"76":{ 
+"id":"157",
+"code":"75271001",
+"label":"Professional midwife (occupation)"
+}
+,
+"77":{ 
+"id":"158",
+"code":"76166008",
+"label":"Practical aid (pharmacy) (occupation)"
+}
+,
+"78":{ 
+"id":"159",
+"code":"76231001",
+"label":"Osteopath (occupation)"
+}
+,
+"79":{ 
+"id":"160",
+"code":"76899008",
+"label":"Infectious disease specialist (occupation)"
+}
+,
+"80":{ 
+"id":"161",
+"code":"78703002",
+"label":"General surgeon (occupation)"
+}
+,
+"81":{ 
+"id":"162",
+"code":"78729002",
+"label":"Diagnostic radiologist (occupation)"
+}
+,
+"82":{ 
+"id":"163",
+"code":"79898004",
+"label":"Auxiliary midwife (occupation)"
+}
+,
+"83":{ 
+"id":"164",
+"code":"80409005",
+"label":"Translator (occupation)"
+}
+,
+"84":{ 
+"id":"165",
+"code":"80546007",
+"label":"Occupational therapist (occupation)"
+}
+,
+"85":{ 
+"id":"166",
+"code":"80584001",
+"label":"Psychiatrist (occupation)"
+}
+,
+"86":{ 
+"id":"167",
+"code":"80933006",
+"label":"Nuclear medicine specialist (occupation)"
+}
+,
+"87":{ 
+"id":"168",
+"code":"81464008",
+"label":"Clinical pathologist (occupation)"
+}
+,
+"88":{ 
+"id":"169",
+"code":"82296001",
+"label":"Pediatrician (occupation)"
+}
+,
+"89":{ 
+"id":"170",
+"code":"83189004",
+"label":"Other professional nurse (occupation)"
+}
+,
+"90":{ 
+"id":"171",
+"code":"83273008",
+"label":"Anatomic pathologist (occupation)"
+}
+,
+"91":{ 
+"id":"172",
+"code":"83685006",
+"label":"Gynecologist (occupation)"
+}
+,
+"92":{ 
+"id":"173",
+"code":"85733003",
+"label":"General pathologist (occupation)"
+}
+,
+"93":{ 
+"id":"174",
+"code":"88189002",
+"label":"Anesthesiologist (occupation)"
+}
+,
+"94":{ 
+"id":"175",
+"code":"88475002",
+"label":"Other dietitian/public health nutritionist (occupation)"
+}
+,
+"95":{ 
+"id":"176",
+"code":"90201008",
+"label":"Pedodontist (occupation)"
+}
+,
+"96":{ 
+"id":"177",
+"code":"90655003",
+"label":"Geriatrics specialist (occupation)"
+}
+,
+"97":{ 
+"id":"178",
+"code":"106289002",
+"label":"Dentist (occupation)"
+}
+,
+"98":{ 
+"id":"179",
+"code":"106291005",
+"label":"Dietician/public health nutritionist (occupation)"
+}
+,
+"99":{ 
+"id":"180",
+"code":"106292003",
+"label":"Professional nurse (occupation)"
+}
+,
+"100":{ 
+"id":"181",
+"code":"106293008",
+"label":"Nursing personnel (occupation)"
+}
+,
+"101":{ 
+"id":"182",
+"code":"106294002",
+"label":"Midwifery personnel (occupation)"
+}
+,
+"102":{ 
+"id":"183",
+"code":"106296000",
+"label":"Physiotherapist/occupational therapist (occupation)"
+}
+,
+"103":{ 
+"id":"184",
+"code":"106330007",
+"label":"Philologist, translator/interpreter (occupation)"
+}
+,
+"104":{ 
+"id":"185",
+"code":"112247003",
+"label":"Medical doctor (occupation)"
+}
+,
+"105":{ 
+"id":"186",
+"code":"158965000",
+"label":"Medical practitioner (occupation)"
+}
+,
+"106":{ 
+"id":"187",
+"code":"158966004",
+"label":"Medical administrator - national (occupation)"
+}
+,
+"107":{ 
+"id":"188",
+"code":"158967008",
+"label":"Consultant physician (occupation)"
+}
+,
+"108":{ 
+"id":"189",
+"code":"158968003",
+"label":"Consultant surgeon (occupation)"
+}
+,
+"109":{ 
+"id":"190",
+"code":"158969006",
+"label":"Consultant gynecology/obstetrics (occupation)"
+}
+,
+"110":{ 
+"id":"191",
+"code":"158970007",
+"label":"Anesthetist (occupation)"
+}
+,
+"111":{ 
+"id":"192",
+"code":"158971006",
+"label":"Hospital registrar (occupation)"
+}
+,
+"112":{ 
+"id":"193",
+"code":"158972004",
+"label":"House officer (occupation)"
+}
+,
+"113":{ 
+"id":"194",
+"code":"158973009",
+"label":"Occupational physician (occupation)"
+}
+,
+"114":{ 
+"id":"195",
+"code":"158974003",
+"label":"Clinical medical officer (occupation)"
+}
+,
+"115":{ 
+"id":"196",
+"code":"158975002",
+"label":"Medical practitioner - teaching (occupation)"
+}
+,
+"116":{ 
+"id":"197",
+"code":"158977005",
+"label":"Dental administrator (occupation)"
+}
+,
+"117":{ 
+"id":"198",
+"code":"158978000",
+"label":"Dental consultant (occupation)"
+}
+,
+"118":{ 
+"id":"199",
+"code":"158979008",
+"label":"Dental general practitioner (occupation)"
+}
+,
+"119":{ 
+"id":"200",
+"code":"158980006",
+"label":"Dental practitioner - teaching (occupation)"
+}
+,
+"120":{ 
+"id":"201",
+"code":"158983008",
+"label":"Nurse administrator - national (occupation)"
+}
+,
+"121":{ 
+"id":"202",
+"code":"158984002",
+"label":"Nursing officer - region (occupation)"
+}
+,
+"122":{ 
+"id":"203",
+"code":"158985001",
+"label":"Nursing officer - district (occupation)"
+}
+,
+"123":{ 
+"id":"204",
+"code":"158986000",
+"label":"Nursing administrator - professional body (occupation)"
+}
+,
+"124":{ 
+"id":"205",
+"code":"158987009",
+"label":"Nursing officer - division (occupation)"
+}
+,
+"125":{ 
+"id":"206",
+"code":"158988004",
+"label":"Nurse education director (occupation)"
+}
+,
+"126":{ 
+"id":"207",
+"code":"158989007",
+"label":"Occupational health nursing officer (occupation)"
+}
+,
+"127":{ 
+"id":"208",
+"code":"158990003",
+"label":"Nursing officer (occupation)"
+}
+,
+"128":{ 
+"id":"209",
+"code":"158992006",
+"label":"Midwifery sister (occupation)"
+}
+,
+"129":{ 
+"id":"210",
+"code":"158993001",
+"label":"Nursing sister (theater) (occupation)"
+}
+,
+"130":{ 
+"id":"211",
+"code":"158994007",
+"label":"Staff nurse (occupation)"
+}
+,
+"131":{ 
+"id":"212",
+"code":"158995008",
+"label":"Staff midwife (occupation)"
+}
+,
+"132":{ 
+"id":"213",
+"code":"158996009",
+"label":"State enrolled nurse (occupation)"
+}
+,
+"133":{ 
+"id":"214",
+"code":"158997000",
+"label":"District nurse (occupation)"
+}
+,
+"134":{ 
+"id":"215",
+"code":"158998005",
+"label":"Private nurse (occupation)"
+}
+,
+"135":{ 
+"id":"216",
+"code":"158999002",
+"label":"Community midwife (occupation)"
+}
+,
+"136":{ 
+"id":"217",
+"code":"159000000",
+"label":"Health visitor (occupation)"
+}
+,
+"137":{ 
+"id":"218",
+"code":"159001001",
+"label":"Clinic nurse (occupation)"
+}
+,
+"138":{ 
+"id":"219",
+"code":"159002008",
+"label":"Practice nurse (occupation)"
+}
+,
+"139":{ 
+"id":"220",
+"code":"159003003",
+"label":"School nurse (occupation)"
+}
+,
+"140":{ 
+"id":"221",
+"code":"159004009",
+"label":"Nurse - teaching (occupation)"
+}
+,
+"141":{ 
+"id":"222",
+"code":"159005005",
+"label":"Student nurse (occupation)"
+}
+,
+"142":{ 
+"id":"223",
+"code":"159006006",
+"label":"Dental nurse (occupation)"
+}
+,
+"143":{ 
+"id":"224",
+"code":"159007002",
+"label":"Community pediatric nurse (occupation)"
+}
+,
+"144":{ 
+"id":"225",
+"code":"159010009",
+"label":"Hospital pharmacist (occupation)"
+}
+,
+"145":{ 
+"id":"226",
+"code":"159011008",
+"label":"Retail pharmacist (occupation)"
+}
+,
+"146":{ 
+"id":"227",
+"code":"159012001",
+"label":"Industrial pharmacist (occupation)"
+}
+,
+"147":{ 
+"id":"228",
+"code":"159013006",
+"label":"Pharmaceutical officer H.A. (occupation)"
+}
+,
+"148":{ 
+"id":"229",
+"code":"159014000",
+"label":"Trainee pharmacist (occupation)"
+}
+,
+"149":{ 
+"id":"230",
+"code":"159016003",
+"label":"Medical radiographer (occupation)"
+}
+,
+"150":{ 
+"id":"231",
+"code":"159017007",
+"label":"Diagnostic radiographer (occupation)"
+}
+,
+"151":{ 
+"id":"232",
+"code":"159018002",
+"label":"Therapeutic radiographer (occupation)"
+}
+,
+"152":{ 
+"id":"233",
+"code":"159019005",
+"label":"Trainee radiographer (occupation)"
+}
+,
+"153":{ 
+"id":"234",
+"code":"159021000",
+"label":"Ophthalmic optician (occupation)"
+}
+,
+"154":{ 
+"id":"235",
+"code":"159022007",
+"label":"Trainee optician (occupation)"
+}
+,
+"155":{ 
+"id":"236",
+"code":"159025009",
+"label":"Remedial gymnast (occupation)"
+}
+,
+"156":{ 
+"id":"237",
+"code":"159026005",
+"label":"Speech/language therapist (occupation)"
+}
+,
+"157":{ 
+"id":"238",
+"code":"159027001",
+"label":"Orthoptist (occupation)"
+}
+,
+"158":{ 
+"id":"239",
+"code":"159028006",
+"label":"Trainee remedial therapist (occupation)"
+}
+,
+"159":{ 
+"id":"240",
+"code":"159033005",
+"label":"Dietitian (occupation)"
+}
+,
+"160":{ 
+"id":"241",
+"code":"159034004",
+"label":"Podiatrist (occupation)"
+}
+,
+"161":{ 
+"id":"242",
+"code":"159035003",
+"label":"Dental auxiliary (occupation)"
+}
+,
+"162":{ 
+"id":"243",
+"code":"159036002",
+"label":"Electrocardiogram technician (occupation)"
+}
+,
+"163":{ 
+"id":"244",
+"code":"159037006",
+"label":"Electroencephalogram technician (occupation)"
+}
+,
+"164":{ 
+"id":"245",
+"code":"159038001",
+"label":"Artificial limb fitter (occupation)"
+}
+,
+"165":{ 
+"id":"246",
+"code":"159039009",
+"label":"Audiology technician (occupation)"
+}
+,
+"166":{ 
+"id":"247",
+"code":"159040006",
+"label":"Pharmacy technician (occupation)"
+}
+,
+"167":{ 
+"id":"248",
+"code":"159041005",
+"label":"Trainee medical technician (occupation)"
+}
+,
+"168":{ 
+"id":"249",
+"code":"159141008",
+"label":"Geneticist (occupation)"
+}
+,
+"169":{ 
+"id":"250",
+"code":"159972006",
+"label":"Surgical corset fitter (occupation)"
+}
+,
+"170":{ 
+"id":"251",
+"code":"160008000",
+"label":"Dental technician (occupation)"
+}
+,
+"171":{ 
+"id":"252",
+"code":"224529009",
+"label":"Clinical assistant (occupation)"
+}
+,
+"172":{ 
+"id":"253",
+"code":"224530004",
+"label":"Senior registrar (occupation)"
+}
+,
+"173":{ 
+"id":"254",
+"code":"224531000",
+"label":"Registrar (occupation)"
+}
+,
+"174":{ 
+"id":"255",
+"code":"224532007",
+"label":"Senior house officer (occupation)"
+}
+,
+"175":{ 
+"id":"256",
+"code":"224533002",
+"label":"Medical officer (occupation)"
+}
+,
+"176":{ 
+"id":"257",
+"code":"224534008",
+"label":"Health visitor, nurse/midwife (occupation)"
+}
+,
+"177":{ 
+"id":"258",
+"code":"224535009",
+"label":"Registered nurse (occupation)"
+}
+,
+"178":{ 
+"id":"259",
+"code":"224536005",
+"label":"Midwifery tutor (occupation)"
+}
+,
+"179":{ 
+"id":"260",
+"code":"224537001",
+"label":"Accident and Emergency nurse (occupation)"
+}
+,
+"180":{ 
+"id":"261",
+"code":"224538006",
+"label":"Triage nurse (occupation)"
+}
+,
+"181":{ 
+"id":"262",
+"code":"224540001",
+"label":"Community nurse (occupation)"
+}
+,
+"182":{ 
+"id":"263",
+"code":"224541002",
+"label":"Nursing continence advisor (occupation)"
+}
+,
+"183":{ 
+"id":"264",
+"code":"224542009",
+"label":"Coronary care nurse (occupation)"
+}
+,
+"184":{ 
+"id":"265",
+"code":"224543004",
+"label":"Diabetic nurse (occupation)"
+}
+,
+"185":{ 
+"id":"266",
+"code":"224544005",
+"label":"Family planning nurse (occupation)"
+}
+,
+"186":{ 
+"id":"267",
+"code":"224545006",
+"label":"Care of the elderly nurse (occupation)"
+}
+,
+"187":{ 
+"id":"268",
+"code":"224546007",
+"label":"Infection control nurse (occupation)"
+}
+,
+"188":{ 
+"id":"269",
+"code":"224547003",
+"label":"Intensive therapy nurse (occupation)"
+}
+,
+"189":{ 
+"id":"270",
+"code":"224548008",
+"label":"Learning disabilities nurse (occupation)"
+}
+,
+"190":{ 
+"id":"271",
+"code":"224549000",
+"label":"Neonatal nurse (occupation)"
+}
+,
+"191":{ 
+"id":"272",
+"code":"224550000",
+"label":"Neurology nurse (occupation)"
+}
+,
+"192":{ 
+"id":"273",
+"code":"224551001",
+"label":"Industrial nurse (occupation)"
+}
+,
+"193":{ 
+"id":"274",
+"code":"224552008",
+"label":"Oncology nurse (occupation)"
+}
+,
+"194":{ 
+"id":"275",
+"code":"224553003",
+"label":"Macmillan nurse (occupation)"
+}
+,
+"195":{ 
+"id":"276",
+"code":"224554009",
+"label":"Marie Curie nurse (occupation)"
+}
+,
+"196":{ 
+"id":"277",
+"code":"224555005",
+"label":"Pain control nurse (occupation)"
+}
+,
+"197":{ 
+"id":"278",
+"code":"224556006",
+"label":"Palliative care nurse (occupation)"
+}
+,
+"198":{ 
+"id":"279",
+"code":"224557002",
+"label":"Chemotherapy nurse (occupation)"
+}
+,
+"199":{ 
+"id":"280",
+"code":"224558007",
+"label":"Radiotherapy nurse (occupation)"
+}
+,
+"200":{ 
+"id":"281",
+"code":"224559004",
+"label":"Recovery nurse (occupation)"
+}
+,
+"201":{ 
+"id":"282",
+"code":"224560009",
+"label":"Stoma care nurse (occupation)"
+}
+,
+"202":{ 
+"id":"283",
+"code":"224561008",
+"label":"Theatre nurse (occupation)"
+}
+,
+"203":{ 
+"id":"284",
+"code":"224562001",
+"label":"Pediatric nurse (occupation)"
+}
+,
+"204":{ 
+"id":"285",
+"code":"224563006",
+"label":"Mental health nurse (occupation)"
+}
+,
+"205":{ 
+"id":"286",
+"code":"224564000",
+"label":"Community mental health nurse (occupation)"
+}
+,
+"206":{ 
+"id":"287",
+"code":"224565004",
+"label":"Renal nurse (occupation)"
+}
+,
+"207":{ 
+"id":"288",
+"code":"224566003",
+"label":"Hemodialysis nurse (occupation)"
+}
+,
+"208":{ 
+"id":"289",
+"code":"224567007",
+"label":"Tissue viability nurse (occupation)"
+}
+,
+"209":{ 
+"id":"290",
+"code":"224569005",
+"label":"Nurse grade (occupation)"
+}
+,
+"210":{ 
+"id":"291",
+"code":"224570006",
+"label":"Clinical nurse specialist (occupation)"
+}
+,
+"211":{ 
+"id":"292",
+"code":"224571005",
+"label":"Nurse practitioner (occupation)"
+}
+,
+"212":{ 
+"id":"293",
+"code":"224572003",
+"label":"Nursing sister (occupation)"
+}
+,
+"213":{ 
+"id":"294",
+"code":"224573008",
+"label":"Charge nurse (occupation)"
+}
+,
+"214":{ 
+"id":"295",
+"code":"224574002",
+"label":"Ward manager (occupation)"
+}
+,
+"215":{ 
+"id":"296",
+"code":"224575001",
+"label":"Nursing team leader (occupation)"
+}
+,
+"216":{ 
+"id":"297",
+"code":"224576000",
+"label":"Nursing assistant (occupation)"
+}
+,
+"217":{ 
+"id":"298",
+"code":"224577009",
+"label":"Healthcare assistant (occupation)"
+}
+,
+"218":{ 
+"id":"299",
+"code":"224578004",
+"label":"Nursery nurse (occupation)"
+}
+,
+"219":{ 
+"id":"300",
+"code":"224579007",
+"label":"Healthcare service manager (occupation)"
+}
+,
+"220":{ 
+"id":"301",
+"code":"224580005",
+"label":"Occupational health service manager (occupation)"
+}
+,
+"221":{ 
+"id":"302",
+"code":"224581009",
+"label":"Community nurse manager (occupation)"
+}
+,
+"222":{ 
+"id":"303",
+"code":"224583007",
+"label":"Behavior therapist (occupation)"
+}
+,
+"223":{ 
+"id":"304",
+"code":"224584001",
+"label":"Behavior therapy assistant (occupation)"
+}
+,
+"224":{ 
+"id":"305",
+"code":"224585000",
+"label":"Drama therapist (occupation)"
+}
+,
+"225":{ 
+"id":"306",
+"code":"224586004",
+"label":"Domiciliary occupational therapist (occupation)"
+}
+,
+"226":{ 
+"id":"307",
+"code":"224587008",
+"label":"Occupational therapy helper (occupation)"
+}
+,
+"227":{ 
+"id":"308",
+"code":"224588003",
+"label":"Psychotherapist (occupation)"
+}
+,
+"228":{ 
+"id":"309",
+"code":"224589006",
+"label":"Community-based physiotherapist (occupation)"
+}
+,
+"229":{ 
+"id":"310",
+"code":"224590002",
+"label":"Play therapist (occupation)"
+}
+,
+"230":{ 
+"id":"311",
+"code":"224591003",
+"label":"Play specialist (occupation)"
+}
+,
+"231":{ 
+"id":"312",
+"code":"224592005",
+"label":"Play leader (occupation)"
+}
+,
+"232":{ 
+"id":"313",
+"code":"224593000",
+"label":"Community-based speech/language therapist (occupation)"
+}
+,
+"233":{ 
+"id":"314",
+"code":"224594006",
+"label":"Speech/language assistant (occupation)"
+}
+,
+"234":{ 
+"id":"315",
+"code":"224595007",
+"label":"Professional counselor (occupation)"
+}
+,
+"235":{ 
+"id":"316",
+"code":"224596008",
+"label":"Marriage guidance counselor (occupation)"
+}
+,
+"236":{ 
+"id":"317",
+"code":"224597004",
+"label":"Trained nurse counselor (occupation)"
+}
+,
+"237":{ 
+"id":"318",
+"code":"224598009",
+"label":"Trained social worker counselor (occupation)"
+}
+,
+"238":{ 
+"id":"319",
+"code":"224599001",
+"label":"Trained personnel counselor (occupation)"
+}
+,
+"239":{ 
+"id":"320",
+"code":"224600003",
+"label":"Psychoanalyst (occupation)"
+}
+,
+"240":{ 
+"id":"321",
+"code":"224601004",
+"label":"Assistant psychologist (occupation)"
+}
+,
+"241":{ 
+"id":"322",
+"code":"224602006",
+"label":"Community-based podiatrist (occupation)"
+}
+,
+"242":{ 
+"id":"323",
+"code":"224603001",
+"label":"Foot care worker (occupation)"
+}
+,
+"243":{ 
+"id":"324",
+"code":"224604007",
+"label":"Audiometrician (occupation)"
+}
+,
+"244":{ 
+"id":"325",
+"code":"224605008",
+"label":"Audiometrist (occupation)"
+}
+,
+"245":{ 
+"id":"326",
+"code":"224606009",
+"label":"Technical healthcare occupation (occupation)"
+}
+,
+"246":{ 
+"id":"327",
+"code":"224607000",
+"label":"Occupational therapy technical instructor (occupation)"
+}
+,
+"247":{ 
+"id":"328",
+"code":"224608005",
+"label":"Administrative healthcare staff (occupation)"
+}
+,
+"248":{ 
+"id":"329",
+"code":"224609002",
+"label":"Complementary health worker (occupation)"
+}
+,
+"249":{ 
+"id":"330",
+"code":"224610007",
+"label":"Supporting services personnel (occupation)"
+}
+,
+"250":{ 
+"id":"331",
+"code":"224614003",
+"label":"Research associate (occupation)"
+}
+,
+"251":{ 
+"id":"332",
+"code":"224615002",
+"label":"Research nurse (occupation)"
+}
+,
+"252":{ 
+"id":"333",
+"code":"224620002",
+"label":"Human aid to communication (occupation)"
+}
+,
+"253":{ 
+"id":"334",
+"code":"224621003",
+"label":"Palantypist (occupation)"
+}
+,
+"254":{ 
+"id":"335",
+"code":"224622005",
+"label":"Note taker (occupation)"
+}
+,
+"255":{ 
+"id":"336",
+"code":"224623000",
+"label":"Cuer (occupation)"
+}
+,
+"256":{ 
+"id":"337",
+"code":"224624006",
+"label":"Lipspeaker (occupation)"
+}
+,
+"257":{ 
+"id":"338",
+"code":"224625007",
+"label":"Interpreter for British sign language (occupation)"
+}
+,
+"258":{ 
+"id":"339",
+"code":"224626008",
+"label":"Interpreter for Signs supporting English (occupation)"
+}
+,
+"259":{ 
+"id":"340",
+"code":"224936003",
+"label":"General practitioner locum (occupation)"
+}
+,
+"260":{ 
+"id":"341",
+"code":"225726006",
+"label":"Lactation consultant (occupation)"
+}
+,
+"261":{ 
+"id":"342",
+"code":"225727002",
+"label":"Midwife counselor (occupation)"
+}
+,
+"262":{ 
+"id":"343",
+"code":"265937000",
+"label":"Nursing occupation (occupation)"
+}
+,
+"263":{ 
+"id":"344",
+"code":"265938005",
+"label":"Physio/occup/speech therapist (occupation)"
+}
+,
+"264":{ 
+"id":"345",
+"code":"265939002",
+"label":"Medical/dental technicians (occupation)"
+}
+,
+"265":{ 
+"id":"346",
+"code":"283875005",
+"label":"Parkinson's disease nurse (occupation)"
+}
+,
+"266":{ 
+"id":"347",
+"code":"302211009",
+"label":"Specialist registrar (occupation)"
+}
+,
+"267":{ 
+"id":"348",
+"code":"303124005",
+"label":"Member of mental health review tribunal (occupation)"
+}
+,
+"268":{ 
+"id":"349",
+"code":"303129000",
+"label":"Hospital manager (occupation)"
+}
+,
+"269":{ 
+"id":"350",
+"code":"303133007",
+"label":"Responsible medical officer (occupation)"
+}
+,
+"270":{ 
+"id":"351",
+"code":"303134001",
+"label":"Independent doctor (occupation)"
+}
+,
+"271":{ 
+"id":"352",
+"code":"304291006",
+"label":"Bereavement counselor (occupation)"
+}
+,
+"272":{ 
+"id":"353",
+"code":"304292004",
+"label":"Surgeon (occupation)"
+}
+,
+"273":{ 
+"id":"354",
+"code":"307988006",
+"label":"Medical technician (occupation)"
+}
+,
+"274":{ 
+"id":"355",
+"code":"308002005",
+"label":"Remedial therapist (occupation)"
+}
+,
+"275":{ 
+"id":"356",
+"code":"309294001",
+"label":"Accident and Emergency doctor (occupation)"
+}
+,
+"276":{ 
+"id":"357",
+"code":"309295000",
+"label":"Clinical oncologist (occupation)"
+}
+,
+"277":{ 
+"id":"358",
+"code":"309296004",
+"label":"Family planning doctor (occupation)"
+}
+,
+"278":{ 
+"id":"359",
+"code":"309322005",
+"label":"Associate general practitioner (occupation)"
+}
+,
+"279":{ 
+"id":"360",
+"code":"309323000",
+"label":"Partner of general practitioner (occupation)"
+}
+,
+"280":{ 
+"id":"361",
+"code":"309324006",
+"label":"General practitioner assistant (occupation)"
+}
+,
+"281":{ 
+"id":"362",
+"code":"309326008",
+"label":"Deputizing general practitioner (occupation)"
+}
+,
+"282":{ 
+"id":"363",
+"code":"309327004",
+"label":"General practitioner registrar (occupation)"
+}
+,
+"283":{ 
+"id":"364",
+"code":"309328009",
+"label":"Ambulatory pediatrician (occupation)"
+}
+,
+"284":{ 
+"id":"365",
+"code":"309329001",
+"label":"Community pediatrician (occupation)"
+}
+,
+"285":{ 
+"id":"366",
+"code":"309330006",
+"label":"Pediatric cardiologist (occupation)"
+}
+,
+"286":{ 
+"id":"367",
+"code":"309331005",
+"label":"Pediatric endocrinologist (occupation)"
+}
+,
+"287":{ 
+"id":"368",
+"code":"309332003",
+"label":"Pediatric gastroenterologist (occupation)"
+}
+,
+"288":{ 
+"id":"369",
+"code":"309333008",
+"label":"Pediatric nephrologist (occupation)"
+}
+,
+"289":{ 
+"id":"370",
+"code":"309334002",
+"label":"Pediatric neurologist (occupation)"
+}
+,
+"290":{ 
+"id":"371",
+"code":"309335001",
+"label":"Pediatric rheumatologist (occupation)"
+}
+,
+"291":{ 
+"id":"372",
+"code":"309336000",
+"label":"Pediatric oncologist (occupation)"
+}
+,
+"292":{ 
+"id":"373",
+"code":"309337009",
+"label":"Pain management specialist (occupation)"
+}
+,
+"293":{ 
+"id":"374",
+"code":"309338004",
+"label":"Intensive care specialist (occupation)"
+}
+,
+"294":{ 
+"id":"375",
+"code":"309339007",
+"label":"Adult intensive care specialist (occupation)"
+}
+,
+"295":{ 
+"id":"376",
+"code":"309340009",
+"label":"Pediatric intensive care specialist (occupation)"
+}
+,
+"296":{ 
+"id":"377",
+"code":"309341008",
+"label":"Blood transfusion doctor (occupation)"
+}
+,
+"297":{ 
+"id":"378",
+"code":"309342001",
+"label":"Histopathologist (occupation)"
+}
+,
+"298":{ 
+"id":"379",
+"code":"309343006",
+"label":"Physician (occupation)"
+}
+,
+"299":{ 
+"id":"380",
+"code":"309345004",
+"label":"Chest physician (occupation)"
+}
+,
+"300":{ 
+"id":"381",
+"code":"309346003",
+"label":"Thoracic physician (occupation)"
+}
+,
+"301":{ 
+"id":"382",
+"code":"309347007",
+"label":"Clinical hematologist (occupation)"
+}
+,
+"302":{ 
+"id":"383",
+"code":"309348002",
+"label":"Clinical neurophysiologist (occupation)"
+}
+,
+"303":{ 
+"id":"384",
+"code":"309349005",
+"label":"Clinical physiologist (occupation)"
+}
+,
+"304":{ 
+"id":"385",
+"code":"309350005",
+"label":"Diabetologist (occupation)"
+}
+,
+"305":{ 
+"id":"386",
+"code":"309351009",
+"label":"Andrologist (occupation)"
+}
+,
+"306":{ 
+"id":"387",
+"code":"309352002",
+"label":"Neuroendocrinologist (occupation)"
+}
+,
+"307":{ 
+"id":"388",
+"code":"309353007",
+"label":"Reproductive endocrinologist (occupation)"
+}
+,
+"308":{ 
+"id":"389",
+"code":"309354001",
+"label":"Thyroidologist (occupation)"
+}
+,
+"309":{ 
+"id":"390",
+"code":"309355000",
+"label":"Clinical geneticist (occupation)"
+}
+,
+"310":{ 
+"id":"391",
+"code":"309356004",
+"label":"Clinical cytogeneticist (occupation)"
+}
+,
+"311":{ 
+"id":"392",
+"code":"309357008",
+"label":"Clinical molecular geneticist (occupation)"
+}
+,
+"312":{ 
+"id":"393",
+"code":"309358003",
+"label":"Genitourinary medicine physician (occupation)"
+}
+,
+"313":{ 
+"id":"394",
+"code":"309359006",
+"label":"Palliative care physician (occupation)"
+}
+,
+"314":{ 
+"id":"395",
+"code":"309360001",
+"label":"Rehabilitation physician (occupation)"
+}
+,
+"315":{ 
+"id":"396",
+"code":"309361002",
+"label":"Child and adolescent psychiatrist (occupation)"
+}
+,
+"316":{ 
+"id":"397",
+"code":"309362009",
+"label":"Forensic psychiatrist (occupation)"
+}
+,
+"317":{ 
+"id":"398",
+"code":"309363004",
+"label":"Liaison psychiatrist (occupation)"
+}
+,
+"318":{ 
+"id":"399",
+"code":"309364005",
+"label":"Psychogeriatrician (occupation)"
+}
+,
+"319":{ 
+"id":"400",
+"code":"309365006",
+"label":"Psychiatrist for mental handicap (occupation)"
+}
+,
+"320":{ 
+"id":"401",
+"code":"309366007",
+"label":"Rehabilitation psychiatrist (occupation)"
+}
+,
+"321":{ 
+"id":"402",
+"code":"309367003",
+"label":"Obstetrician and gynecologist (occupation)"
+}
+,
+"322":{ 
+"id":"403",
+"code":"309368008",
+"label":"Breast surgeon (occupation)"
+}
+,
+"323":{ 
+"id":"404",
+"code":"309369000",
+"label":"Cardiothoracic surgeon (occupation)"
+}
+,
+"324":{ 
+"id":"405",
+"code":"309371000",
+"label":"Cardiac surgeon (occupation)"
+}
+,
+"325":{ 
+"id":"406",
+"code":"309372007",
+"label":"Ear, nose and throat surgeon (occupation)"
+}
+,
+"326":{ 
+"id":"407",
+"code":"309373002",
+"label":"Endocrine surgeon (occupation)"
+}
+,
+"327":{ 
+"id":"408",
+"code":"309374008",
+"label":"Thyroid surgeon (occupation)"
+}
+,
+"328":{ 
+"id":"409",
+"code":"309375009",
+"label":"Pituitary surgeon (occupation)"
+}
+,
+"329":{ 
+"id":"410",
+"code":"309376005",
+"label":"Gastrointestinal surgeon (occupation)"
+}
+,
+"330":{ 
+"id":"411",
+"code":"309377001",
+"label":"General gastrointestinal surgeon (occupation)"
+}
+,
+"331":{ 
+"id":"412",
+"code":"309378006",
+"label":"Upper gastrointestinal surgeon (occupation)"
+}
+,
+"332":{ 
+"id":"413",
+"code":"309379003",
+"label":"Colorectal surgeon (occupation)"
+}
+,
+"333":{ 
+"id":"414",
+"code":"309380000",
+"label":"Hand surgeon (occupation)"
+}
+,
+"334":{ 
+"id":"415",
+"code":"309381001",
+"label":"Hepatobiliary surgeon (occupation)"
+}
+,
+"335":{ 
+"id":"416",
+"code":"309382008",
+"label":"Ophthalmic surgeon (occupation)"
+}
+,
+"336":{ 
+"id":"417",
+"code":"309383003",
+"label":"Pediatric surgeon (occupation)"
+}
+,
+"337":{ 
+"id":"418",
+"code":"309384009",
+"label":"Pancreatic surgeon (occupation)"
+}
+,
+"338":{ 
+"id":"419",
+"code":"309385005",
+"label":"Transplant surgeon (occupation)"
+}
+,
+"339":{ 
+"id":"420",
+"code":"309386006",
+"label":"Trauma surgeon (occupation)"
+}
+,
+"340":{ 
+"id":"421",
+"code":"309388007",
+"label":"Vascular surgeon (occupation)"
+}
+,
+"341":{ 
+"id":"422",
+"code":"309389004",
+"label":"Medical practitioner grade (occupation)"
+}
+,
+"342":{ 
+"id":"423",
+"code":"309390008",
+"label":"Hospital consultant (occupation)"
+}
+,
+"343":{ 
+"id":"424",
+"code":"309391007",
+"label":"Visiting specialist registrar (occupation)"
+}
+,
+"344":{ 
+"id":"425",
+"code":"309392000",
+"label":"Research registrar (occupation)"
+}
+,
+"345":{ 
+"id":"426",
+"code":"309393005",
+"label":"General practitioner grade (occupation)"
+}
+,
+"346":{ 
+"id":"427",
+"code":"309394004",
+"label":"General practitioner principal (occupation)"
+}
+,
+"347":{ 
+"id":"428",
+"code":"309395003",
+"label":"Hospital specialist (occupation)"
+}
+,
+"348":{ 
+"id":"429",
+"code":"309396002",
+"label":"Associate specialist (occupation)"
+}
+,
+"349":{ 
+"id":"430",
+"code":"309397006",
+"label":"Research fellow (occupation)"
+}
+,
+"350":{ 
+"id":"431",
+"code":"309398001",
+"label":"Profession allied to medicine (occupation)"
+}
+,
+"351":{ 
+"id":"432",
+"code":"309399009",
+"label":"Hospital-based dietitian (occupation)"
+}
+,
+"352":{ 
+"id":"433",
+"code":"309400002",
+"label":"Domiciliary physiotherapist (occupation)"
+}
+,
+"353":{ 
+"id":"434",
+"code":"309401003",
+"label":"General practitioner-based physiotherapist (occupation)"
+}
+,
+"354":{ 
+"id":"435",
+"code":"309402005",
+"label":"Hospital-based physiotherapist (occupation)"
+}
+,
+"355":{ 
+"id":"436",
+"code":"309403000",
+"label":"Private physiotherapist (occupation)"
+}
+,
+"356":{ 
+"id":"437",
+"code":"309404006",
+"label":"Physiotherapy helper (occupation)"
+}
+,
+"357":{ 
+"id":"438",
+"code":"309409001",
+"label":"Hospital-based speech and language therapist (occupation)"
+}
+,
+"358":{ 
+"id":"439",
+"code":"309410006",
+"label":"Arts therapist (occupation)"
+}
+,
+"359":{ 
+"id":"440",
+"code":"309411005",
+"label":"Dance therapist (occupation)"
+}
+,
+"360":{ 
+"id":"441",
+"code":"309412003",
+"label":"Music therapist (occupation)"
+}
+,
+"361":{ 
+"id":"442",
+"code":"309413008",
+"label":"Renal dietitian (occupation)"
+}
+,
+"362":{ 
+"id":"443",
+"code":"309414002",
+"label":"Liver dietitian (occupation)"
+}
+,
+"363":{ 
+"id":"444",
+"code":"309415001",
+"label":"Oncology dietitian (occupation)"
+}
+,
+"364":{ 
+"id":"445",
+"code":"309416000",
+"label":"Pediatric dietitian (occupation)"
+}
+,
+"365":{ 
+"id":"446",
+"code":"309417009",
+"label":"Diabetes dietitian (occupation)"
+}
+,
+"366":{ 
+"id":"447",
+"code":"309418004",
+"label":"Audiologist (occupation)"
+}
+,
+"367":{ 
+"id":"448",
+"code":"309419007",
+"label":"Hearing therapist (occupation)"
+}
+,
+"368":{ 
+"id":"449",
+"code":"309420001",
+"label":"Audiological scientist (occupation)"
+}
+,
+"369":{ 
+"id":"450",
+"code":"309421002",
+"label":"Hearing aid dispenser (occupation)"
+}
+,
+"370":{ 
+"id":"451",
+"code":"309422009",
+"label":"Community-based occupational therapist (occupation)"
+}
+,
+"371":{ 
+"id":"452",
+"code":"309423004",
+"label":"Hospital-based occupational therapist (occupation)"
+}
+,
+"372":{ 
+"id":"453",
+"code":"309427003",
+"label":"Social services occupational therapist (occupation)"
+}
+,
+"373":{ 
+"id":"454",
+"code":"309428008",
+"label":"Orthotist (occupation)"
+}
+,
+"374":{ 
+"id":"455",
+"code":"309429000",
+"label":"Surgical fitter (occupation)"
+}
+,
+"375":{ 
+"id":"456",
+"code":"309434001",
+"label":"Hospital-based podiatrist (occupation)"
+}
+,
+"376":{ 
+"id":"457",
+"code":"309435000",
+"label":"Podiatry assistant (occupation)"
+}
+,
+"377":{ 
+"id":"458",
+"code":"309436004",
+"label":"Lymphedema nurse (occupation)"
+}
+,
+"378":{ 
+"id":"459",
+"code":"309437008",
+"label":"Community learning disabilities nurse (occupation)"
+}
+,
+"379":{ 
+"id":"460",
+"code":"309439006",
+"label":"Clinical nurse teacher (occupation)"
+}
+,
+"380":{ 
+"id":"461",
+"code":"309440008",
+"label":"Community practice nurse teacher (occupation)"
+}
+,
+"381":{ 
+"id":"462",
+"code":"309441007",
+"label":"Nurse tutor (occupation)"
+}
+,
+"382":{ 
+"id":"463",
+"code":"309442000",
+"label":"Nurse teacher practitioner (occupation)"
+}
+,
+"383":{ 
+"id":"464",
+"code":"309443005",
+"label":"Nurse lecturer practitioner (occupation)"
+}
+,
+"384":{ 
+"id":"465",
+"code":"309444004",
+"label":"Outreach nurse (occupation)"
+}
+,
+"385":{ 
+"id":"466",
+"code":"309445003",
+"label":"Anesthetic nurse (occupation)"
+}
+,
+"386":{ 
+"id":"467",
+"code":"309446002",
+"label":"Nurse manager (occupation)"
+}
+,
+"387":{ 
+"id":"468",
+"code":"309450009",
+"label":"Nurse administrator (occupation)"
+}
+,
+"388":{ 
+"id":"469",
+"code":"309452001",
+"label":"Midwifery grade (occupation)"
+}
+,
+"389":{ 
+"id":"470",
+"code":"309453006",
+"label":"Registered midwife (occupation)"
+}
+,
+"390":{ 
+"id":"471",
+"code":"309454000",
+"label":"Student midwife (occupation)"
+}
+,
+"391":{ 
+"id":"472",
+"code":"309455004",
+"label":"Parentcraft sister (occupation)"
+}
+,
+"392":{ 
+"id":"473",
+"code":"309459005",
+"label":"Healthcare professional grade (occupation)"
+}
+,
+"393":{ 
+"id":"474",
+"code":"309460000",
+"label":"Restorative dentist (occupation)"
+}
+,
+"394":{ 
+"id":"475",
+"code":"310170009",
+"label":"Pediatric audiologist (occupation)"
+}
+,
+"395":{ 
+"id":"476",
+"code":"310171008",
+"label":"Immunopathologist (occupation)"
+}
+,
+"396":{ 
+"id":"477",
+"code":"310172001",
+"label":"Audiological physician (occupation)"
+}
+,
+"397":{ 
+"id":"478",
+"code":"310173006",
+"label":"Clinical pharmacologist (occupation)"
+}
+,
+"398":{ 
+"id":"479",
+"code":"310174000",
+"label":"Private doctor (occupation)"
+}
+,
+"399":{ 
+"id":"480",
+"code":"310175004",
+"label":"Agency nurse (occupation)"
+}
+,
+"400":{ 
+"id":"481",
+"code":"310176003",
+"label":"Behavioral therapist nurse (occupation)"
+}
+,
+"401":{ 
+"id":"482",
+"code":"310177007",
+"label":"Cardiac rehabilitation nurse (occupation)"
+}
+,
+"402":{ 
+"id":"483",
+"code":"310178002",
+"label":"Genitourinary nurse (occupation)"
+}
+,
+"403":{ 
+"id":"484",
+"code":"310179005",
+"label":"Rheumatology nurse specialist (occupation)"
+}
+,
+"404":{ 
+"id":"485",
+"code":"310180008",
+"label":"Continence nurse (occupation)"
+}
+,
+"405":{ 
+"id":"486",
+"code":"310181007",
+"label":"Contact tracing nurse (occupation)"
+}
+,
+"406":{ 
+"id":"487",
+"code":"310182000",
+"label":"General nurse (occupation)"
+}
+,
+"407":{ 
+"id":"488",
+"code":"310183005",
+"label":"Nurse for the mentally handicapped (occupation)"
+}
+,
+"408":{ 
+"id":"489",
+"code":"310184004",
+"label":"Liaison nurse (occupation)"
+}
+,
+"409":{ 
+"id":"490",
+"code":"310185003",
+"label":"Diabetic liaison nurse (occupation)"
+}
+,
+"410":{ 
+"id":"491",
+"code":"310186002",
+"label":"Nurse psychotherapist (occupation)"
+}
+,
+"411":{ 
+"id":"492",
+"code":"310187006",
+"label":"Company nurse (occupation)"
+}
+,
+"412":{ 
+"id":"493",
+"code":"310188001",
+"label":"Hospital midwife (occupation)"
+}
+,
+"413":{ 
+"id":"494",
+"code":"310189009",
+"label":"Genetic counselor (occupation)"
+}
+,
+"414":{ 
+"id":"495",
+"code":"310190000",
+"label":"Mental health counselor (occupation)"
+}
+,
+"415":{ 
+"id":"496",
+"code":"310191001",
+"label":"Clinical psychologist (occupation)"
+}
+,
+"416":{ 
+"id":"497",
+"code":"310192008",
+"label":"Educational psychologist (occupation)"
+}
+,
+"417":{ 
+"id":"498",
+"code":"310193003",
+"label":"Coroner (occupation)"
+}
+,
+"418":{ 
+"id":"499",
+"code":"310194009",
+"label":"Appliance officer (occupation)"
+}
+,
+"419":{ 
+"id":"500",
+"code":"310512001",
+"label":"Medical oncologist (occupation)"
+}
+,
+"420":{ 
+"id":"501",
+"code":"311441001",
+"label":"School medical officer (occupation)"
+}
+,
+"421":{ 
+"id":"502",
+"code":"312485001",
+"label":"Integrated midwife (occupation)"
+}
+,
+"422":{ 
+"id":"503",
+"code":"372102007",
+"label":"Registered nurse first assist (occupation)"
+}
+,
+"423":{ 
+"id":"504",
+"code":"387619007",
+"label":"Optician (occupation)"
+}
+,
+"424":{ 
+"id":"505",
+"code":"394572006",
+"label":"Medical secretary (occupation)"
+}
+,
+"425":{ 
+"id":"506",
+"code":"394618009",
+"label":"Hospital nurse (occupation)"
+}
+,
+"426":{ 
+"id":"507",
+"code":"397824005",
+"label":"Consultant anesthetist (occupation)"
+}
+,
+"427":{ 
+"id":"508",
+"code":"397897005",
+"label":"Paramedic (occupation)"
+}
+,
+"428":{ 
+"id":"509",
+"code":"397903001",
+"label":"Staff grade obstetrician (occupation)"
+}
+,
+"429":{ 
+"id":"510",
+"code":"397908005",
+"label":"Staff grade practitioner (occupation)"
+}
+,
+"430":{ 
+"id":"511",
+"code":"398130009",
+"label":"Medical student (occupation)"
+}
+,
+"431":{ 
+"id":"512",
+"code":"398238009",
+"label":"Acting obstetric registrar (occupation)"
+}
+,
+"432":{ 
+"id":"513",
+"code":"404940000",
+"label":"Physiotherapist technical instructor (occupation)"
+}
+,
+"433":{ 
+"id":"514",
+"code":"405277009",
+"label":"Resident physician (occupation)"
+}
+,
+"434":{ 
+"id":"515",
+"code":"405278004",
+"label":"Certified registered nurse anesthetist (occupation)"
+}
+,
+"435":{ 
+"id":"516",
+"code":"405279007",
+"label":"Attending physician (occupation)"
+}
+,
+"436":{ 
+"id":"517",
+"code":"405623001",
+"label":"Assigned practitioner (occupation)"
+}
+,
+"437":{ 
+"id":"518",
+"code":"405684005",
+"label":"Professional initiating surgical case (occupation)"
+}
+,
+"438":{ 
+"id":"519",
+"code":"405685006",
+"label":"Professional providing staff relief during surgical procedure (occupation)"
+}
+,
+"439":{ 
+"id":"520",
+"code":"408798009",
+"label":"Consultant pediatrician (occupation)"
+}
+,
+"440":{ 
+"id":"521",
+"code":"408799001",
+"label":"Consultant neonatologist (occupation)"
+}
+,
+"441":{ 
+"id":"522",
+"code":"409974004",
+"label":"Health educator (occupation)"
+}
+,
+"442":{ 
+"id":"523",
+"code":"409975003",
+"label":"Certified health education specialist (occupation)"
+}
+,
+"443":{ 
+"id":"524",
+"code":"413854007",
+"label":"Circulating nurse (occupation)"
+}
+,
+"444":{ 
+"id":"525",
+"code":"415075003",
+"label":"Perioperative nurse (occupation)"
+}
+,
+"445":{ 
+"id":"526",
+"code":"415506007",
+"label":"Scrub nurse (occupation)"
+}
+,
+"446":{ 
+"id":"527",
+"code":"416160000",
+"label":"Fellow of American Academy of Osteopathy (occupation)"
+}
+,
+"447":{ 
+"id":"528",
+"code":"420409002",
+"label":"Oculoplastic surgeon (occupation)"
+}
+,
+"448":{ 
+"id":"529",
+"code":"420678001",
+"label":"Retinal surgeon (occupation)"
+}
+,
+"449":{ 
+"id":"530",
+"code":"421841007",
+"label":"Admitting physican (occupation)"
+}
+,
+"450":{ 
+"id":"531",
+"code":"422140007",
+"label":"Medical ophthalmologist (occupation)"
+}
+,
+"451":{ 
+"id":"532",
+"code":"422234006",
+"label":"Ophthalmologist (occupation)"
+}
+,
+"452":{ 
+"id":"533",
+"code":"432100008",
+"label":"Health coach (occupation)"
+}
+,
+"453":{ 
+"id":"534",
+"code":"442867008",
+"label":"Respiratory therapist (occupation)"
+}
+,
+"454":{ 
+"id":"535",
+"code":"443090005",
+"label":"Podiatric surgeon (occupation)"
+}
+,
+"455":{ 
+"id":"536",
+"code":"444912007",
+"label":"Hypnotherapist (occupation)"
+}
+,
+"456":{ 
+"id":"537",
+"code":"445313000",
+"label":"Asthma nurse specialist (occupation)"
+}
+,
+"457":{ 
+"id":"538",
+"code":"445451001",
+"label":"Nurse case manager (occupation)"
+}
+,
+"458":{ 
+"id":"539",
+"code":"446050000",
+"label":"Primary care physician (occupation)"
+}
+,
+"459":{ 
+"id":"540",
+"code":"446701002",
+"label":"Addiction medicine specialist (occupation)"
+}
+,
+"460":{ 
+"id":"541",
+"code":"449161006",
+"label":"Physician assistant (occupation)"
+}
+,
+"461":{ 
+"id":"542",
+"code":"471302004",
+"label":"Government midwife (occupation)"
+}
+}
+}
+}
+}
+}
+}
