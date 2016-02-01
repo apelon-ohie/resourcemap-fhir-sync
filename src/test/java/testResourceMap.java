@@ -1,5 +1,6 @@
-import org.apelon.resourcemap.ResourcemapHandler;
-import org.apelon.resourcemap.objects.ResourcemapField;
+import com.apelon.resourcemap.ResourcemapHandler;
+import com.apelon.resourcemap.objects.ResourcemapField;
+import org.junit.Test;
 
 
 public class testResourceMap {
@@ -10,7 +11,7 @@ public class testResourceMap {
 		ResourcemapField rmfl = new ResourcemapField();
 		rmfl.setCollectionId(1667);
 		rmfl.setLayerId(1669);
-		rmfl.setLayerName("Medical Facility Information"); //Medical Facility Information 
+		rmfl.setLayerName("Medical Facility Information"); //Medical Facility Information
 		rmfl.setLayerOrder(2);
 		rmfl.setFieldCode("facility_type");
 		rmfl.setFieldName("Facility Type");
@@ -18,7 +19,7 @@ public class testResourceMap {
 		rmfl.setFieldId(14371);
 		rmfl.setValuesetName("valueset-c80-facilitycodes");
 		rmfl.setNextId(3);
-		
+
 		rmh.updateFacilityLayerType(rmfl);
 	}
 	

@@ -1,8 +1,0 @@
-
-{"layer":{"id":"1670","name":"Medical Facility
-Information","ord":"1","fields_attributes":{"0":{
-"id":"13377","name":"Facility
-Type","code":"facility_type","kind":"select_one","ord":"3","layer_id":"1670
-Type","config":{"options":{"1":{
-"id":"2","code":"123456789","kind":"This is the code label"},"2":{
-"id":"3","code":"123456789","kind":"This is the code label"}}}}}}}

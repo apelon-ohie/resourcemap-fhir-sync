@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="fhirdata-4.4.0-431">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/fhirdata-4.4.0-431.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

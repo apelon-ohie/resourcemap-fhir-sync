@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="fhir-1.0.2-Java-0.9">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/fhir-1.0.2-Java-0.9.zip!/" />
+    </SOURCES>
+  </library>
+</component>
