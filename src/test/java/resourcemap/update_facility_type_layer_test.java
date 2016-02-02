@@ -1,9 +1,12 @@
+package resourcemap;
+
+import com.apelon.config.Config;
 import com.apelon.resourcemap.ResourcemapHandler;
 import com.apelon.resourcemap.objects.ResourcemapField;
 import org.junit.Test;
 
 
-public class testResourceMap {
+public class update_facility_type_layer_test {
 
 	@Test
 	public void main() {
@@ -17,7 +20,7 @@ public class testResourceMap {
 		rmfl.setFieldName("Facility Type");
 		rmfl.setFieldOrder(1);
 		rmfl.setFieldId(14371);
-		rmfl.setValuesetName("valueset-c80-facilitycodes");
+		rmfl.setValuesetName(Config.getValuesetSnomedFacilityTypes());
 		rmfl.setNextId(3);
 
 		rmh.updateFacilityLayerType(rmfl);
