@@ -10,6 +10,7 @@ public class update_facility_region_layer_test {
 
 	@Test
 	public void main() {
+		// http://resourcemap.instedd.org/api/collections/1709/layers.json
 		ResourcemapHandler rmh = new ResourcemapHandler();
 		ResourcemapField rmfl = new ResourcemapField();
 		rmfl.setCollectionId(1709);
