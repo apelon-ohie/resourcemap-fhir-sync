@@ -6,25 +6,23 @@ import com.apelon.fhir.FhirData;
 import com.apelon.fhir.objects.FhirValue;
 import com.apelon.http.HttpMessageSender;
 import com.apelon.resourcemap.ResourcemapCommandBuilders;
-import com.apelon.resourcemap.ResourcemapHandler;
-import com.apelon.config.ResourceMapData;
 import com.apelon.resourcemap.objects.ResourcemapField;
 import com.apelon.resourcemap.objects.ResourcemapLayer;
 import com.apelon.util.TestLogger;
 import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertTrue;
 
 
-public class update_facility_region_layer_test {
+public class new_facility_test {
 	public static final Logger logger = TestLogger.get();
 
 	@Test
 	public void main() {
+		// http://resourcemap.instedd.org/api/collections/1709/layers.json
 		ResourcemapLayer layer = new ResourcemapLayer();
 		layer.setCollectionId(Config.getResourcemapCollectionTanzania());
 		layer.setLayerId(1816);
@@ -36,27 +34,29 @@ public class update_facility_region_layer_test {
 		field.setFieldName("regions");
 		field.setFieldOrder(1);
 		field.setFieldId(14413);
-		field.setValuesetName(Config.getValuesetTanzaniaRegions());
+		field.setValuesetName(Config.getValuesetSnomedFacilityTypes());
 		field.setNextId(2);
 		layer.setUpdateField(field);
 
-		//field.setFieldId(14410);
-
 		//Dummy Data or FHIR Data
-		List<FhirValue> fhirData = FhirData.getValueset(Config.getValuesetTanzaniaRegions());
-		//List<FhirValue> fhirData = FhirData.getTestValueset(10);
+//		List<FhirValue> fhirData = FhirData.getValueset(Config.getValuesetSnomedFacilityTypes());
+		List<FhirValue> fhirData = FhirData.getTestValueset(10);
 
-		//Build JSON Command
+		String endpoint = Config.getResourcemapApiCreateSiteUrl(1709);
+
+		logger.debug(endpoint);
+
 		ResourcemapCommandBuilders rmcb = new ResourcemapCommandBuilders();
-		String command = rmcb.buildUpdateLayerPayload(layer, fhirData);
+		String command = rmcb.buildNewSitePayload("VasNewSite", -4.193853, 35.025691);
+		boolean result = HttpMessageSender.createResourcemapSite(endpoint, command);
 
-		//Get Resource Map API Endpoint
-		String endpoint = Config.getResourcemapApiCollectionsUpdateUrl(layer.getCollectionId(), layer.getLayerId());
+		assertTrue(result);
 
-		//Execute Command
-		boolean status = HttpMessageSender.executePut(endpoint, command);
-
-		assertTrue(status);
+//		String command = "";
+//		for(FhirValue fv : fhirData) {
+//			command = rmcb.buildNewSitePayload(fv.getValue(), -4.193853, 35.025691);
+//			result = HttpMessageSender.createResourcemapSite(endpoint, command);
+//		}
 
 		logger.debug(command);
 	}

@@ -6,6 +6,7 @@ import com.apelon.resourcemap.objects.ResourcemapField;
 import java.util.List;
 
 import com.apelon.util.AppLogger;
+import com.apelon.util.TestLogger;
 import org.apache.logging.log4j.Logger;
 
 import org.hl7.fhir.ValueSetContains;
@@ -13,7 +14,7 @@ import org.junit.Test;
 
 public class valueset_tanzania_regions_test {
 
-    public static final Logger logger = AppLogger.get();
+    public static final Logger logger = TestLogger.get();
 
     /**
      * Test the FHIR Value-sets return data; and also verify

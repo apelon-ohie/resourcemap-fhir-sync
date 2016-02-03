@@ -2,6 +2,7 @@ package fhir.valuesets;
 
 import com.apelon.fhir.FhirData;
 import com.apelon.util.AppLogger;
+import com.apelon.util.TestLogger;
 import org.apache.logging.log4j.Logger;
 import org.hl7.fhir.ValueSetContains;
 import org.junit.Test;
@@ -10,7 +11,7 @@ import java.util.List;
 
 public class valueset_snomed_facility_types_test {
 
-    public static final Logger logger = AppLogger.get();
+    public static final Logger logger = TestLogger.get();
 
     /**
      * Test the FHIR Value-sets return data; and also verify
